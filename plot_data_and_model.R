@@ -10,11 +10,11 @@ logistic_fun <- function(t) {
   
 }
 
-N0 <- exp(7.1855445) #
+N0 <- exp(6.778785) #
   
-r <- 0.0095218 #
+r <- 0.0100086 #
   
-K <- 5.979e+10 #
+K <- 6e+10 #
 
 ggplot(aes(t,N), data = growth_data) +
   
@@ -24,4 +24,7 @@ ggplot(aes(t,N), data = growth_data) +
 
   #scale_y_continuous(trans='log10')
 
+986 * exp(1)^(0.0100086*4980)
+
+(6 * 10^10 * 986 * exp(0.0100086 * 4980)) / (6 * 10^10 - 986 + 986 * exp(0.0100086 * 4980))
 

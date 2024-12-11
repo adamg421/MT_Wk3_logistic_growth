@@ -9,9 +9,9 @@ ggplot(aes(t,N), data = growth_data) +
   
   geom_point() +
   
-  xlab("t") +
+  xlab("Time (t)") +
   
-  ylab("y") +
+  ylab("Population Size (N)") +
   
   theme_bw()
 
@@ -19,8 +19,17 @@ ggplot(aes(t,N), data = growth_data) +
   
   geom_point() +
   
-  xlab("t") +
+  xlab("Time (t)") +
   
-  ylab("y") +
+  ylab("Log Population Size (log(N))") +
   
   scale_y_continuous(trans='log10')
+
+
+ggplot(aes(t,N_log), data = data_subset1) +
+  
+  geom_point() +
+  
+  xlab("Time (t)") +
+  
+  ylab("Log Population Size (log(N))") 
