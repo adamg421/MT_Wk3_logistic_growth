@@ -53,4 +53,41 @@ I confirmed these estimates by plotting the original data and overlaying the log
 
 ![e24f9e97-5eaa-4bbb-b197-b98c58e95910](https://github.com/user-attachments/assets/edc2132b-08af-42d6-a245-596eec622b82)
 
+## Question 2
 
+To calculate the population size at t = 4980 assuming exponential growth, we can use the equation for exponential growth:
+
+$$
+N(t) = N_0 e^{rt}
+$$
+
+Filling in our values gives
+
+$$
+N(4980) = 986 \times e^{0.0100086 \times 4980} = 4.368598 \times 10^{24}
+$$
+
+Alternatively, this is the logistic growth equation which relates the population size at time t to the initial size of the population (N0), the growth rate (r) and the carrying capacity (K).
+
+```math
+\begin{equation}
+N(t) = \frac{K N_0 e^{rt}}{K-N_0+N_0 e^{rt}}
+\end{equation}
+```
+
+Completing the calculation with our values gives
+
+```math
+\begin{equation}
+N(4980) = \frac{6 \times 10^{10} \cdot 986 \cdot e^{0.0100086 \cdot 4980}}{6 \times 10^{10}-986+986 e^{0.0100086 \cdot 4980}} = 6 \times 10^{10}
+\end{equation}
+```
+
+This shows that the population has reached the carrying capacity (K) of $6 \times 10^{10}$, which is many times smaller than the population size estimated when assuming exponential growth. This is because the logistic model includes a maximum carrying capacity, for example due to biologically limiting factors like a limited respiratory resource.
+
+## Question 3
+
+This is a semi-log figure with Time (t) on the x-axis and the log of the population size (N) on the y-axis which compares the exponential growth function in blue to the logisitic growth function in red. 
+
+
+![6d808b55-9b0e-4eea-8d77-396176521f11](https://github.com/user-attachments/assets/2c16b62e-db7c-4fab-9201-cb9d6bfc1027)
