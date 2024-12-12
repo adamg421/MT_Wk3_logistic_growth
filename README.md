@@ -8,7 +8,7 @@ This study investigates the logistic growth of a simulated experimental populati
 ### Analysis
 The analysis was conducted in 3 steps with the code available in the repo and linked below.
 
-1. Data visualisation ([plot_data.R](https://github.com/adamg421/MT_Wk3_logistic_growth/blob/main/plot_data.R))
+1. Data visualisation ([plot_data.R](https://github.com/anom1666/MT_Wk3_logistic_growth/blob/main/plot_data.R))
    
    First I plotted the data using the 'ggplot2' package with time on the x-axis and population size on the y-axis.
    
@@ -18,7 +18,7 @@ The analysis was conducted in 3 steps with the code available in the repo and li
 
    ![file_show-2](https://github.com/user-attachments/assets/dfdaa484-e6d6-4664-82c9-d9e3fa50305f)
 
-2. Fitting the linear model ([fit_linear_model.R](https://github.com/adamg421/MT_Wk3_logistic_growth/blob/main/fit_linear_model.R))
+2. Fitting the linear model ([fit_linear_model.R](https://github.com/anom1666/MT_Wk3_logistic_growth/blob/main/fit_linear_model.R))
    
    To determine N0 and r, we filter the data to include only the exponential growth period where K is much greater than N0 and t is small. This is visually estimated as t<1500. The function for this exponential growth period is as follows:
 
@@ -49,7 +49,7 @@ N0 = 986
 r = 0.0100086
 K = $6 \times 10^{10}$
 
-([plot_data_and_model.R](https://github.com/adamg421/MT_Wk3_logistic_growth/blob/main/plot_data_and_model.R))
+([plot_data_and_model.R](https://github.com/anom1666/MT_Wk3_logistic_growth/blob/main/plot_data_and_model.R))
 
 I confirmed these estimates by plotting the original data and overlaying the logistic curve using these parameters. The curve fitted the data well, validating the accuracy of the estimates.
 
@@ -89,7 +89,7 @@ N(4980) = \frac{6 \times 10^{10} \cdot 986 \cdot e^{0.0100086 \cdot 4980}}{6 \ti
 This shows that the population has reached the carrying capacity (K) of $6 \times 10^{10}$, which is many times smaller than the population size estimated when assuming exponential growth. This is because the logistic model includes a maximum carrying capacity, for example due to biologically limiting factors like a limited respiratory resource.
 
 ## Question 3
-The r code used is [exponential_vs_logistic.R](https://github.com/adamg421/MT_Wk3_logistic_growth/blob/main/exponential_vs_logistic.R)
+The r code used is [exponential_vs_logistic.R](https://github.com/anom1666/MT_Wk3_logistic_growth/blob/main/exponential_vs_logistic.R)
 
 This is a semi-log figure with Time (t) on the x-axis and the log of the population size (N) on the y-axis which compares the exponential growth function in blue to the logisitic growth function in red. 
 
