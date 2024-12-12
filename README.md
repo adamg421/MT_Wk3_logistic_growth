@@ -36,6 +36,9 @@ $$
 N(t) = K + 0 \times t
 $$
 
+
+![Screenshot 2024-12-12 at 00 01 56](https://github.com/user-attachments/assets/23bca29e-020d-4915-ac64-f8e246186241)
+
 Therefore k = $6 \times 10^{10}$
 
 ### Results
