@@ -3,7 +3,7 @@
 ## Question 1
 
 ### Introduction
-This study investigates the logistic growth of a simulated experimental population of _Escherichia coli_ to estimate the initial population size (N0), intrinsic growth rate (r), and the carrying capacity (K). The data analysed is "experiment.csv", a dataset downloaded from the Open Science Framework's website (https://osf.io). This dataset includes 84 observations two variables: the time (t) and population size (N).
+This study investigates the logistic growth of a simulated experimental population of _Escherichia coli_ to estimate the initial population size (N0), intrinsic growth rate (r), and the carrying capacity (K). The data analysed are from "experiment.csv", a dataset downloaded from the Open Science Framework's website (https://osf.io). This dataset includes 84 observations two variables: the time (t) and population size (N).
 
 ### Analysis
 The analysis was conducted in 3 steps with the code available in the repo and linked below.
@@ -20,7 +20,7 @@ The analysis was conducted in 3 steps with the code available in the repo and li
 
 2. Fitting the linear model ([fit_linear_model.R](https://github.com/adamg421/MT_Wk3_logistic_growth/blob/main/fit_linear_model.R))
    
-   To determine N0 and r, we filter the data to include only the expontial growth period where K is much greater than N0 and t is small. This is visually estimated as t<1500. The function for this exponential growth period is as follows:
+   To determine N0 and r, we filter the data to include only the exponential growth period where K is much greater than N0 and t is small. This is visually estimated as t<1500. The function for this exponential growth period is as follows:
 
 $$ 
 \ln(N) = \ln(N_0) + rt 
@@ -30,7 +30,7 @@ $$
 
   ![Screenshot 2024-12-11 at 22 48 04](https://github.com/user-attachments/assets/c680d779-3356-4b44-a497-cd5aad636523)
 
-   When t is large (approximated to t>2500) and the population size is constant, the estimate for the intercept gives the carrying capacity (K). This is demostrated by the following equation:
+   When t is large (approximated to t>2500) and the population size is constant, the estimate for the intercept gives the carrying capacity (K). This is demonstrated by the following equation:
 
    $$
 N(t) = K + 0 \times t
@@ -89,7 +89,7 @@ N(4980) = \frac{6 \times 10^{10} \cdot 986 \cdot e^{0.0100086 \cdot 4980}}{6 \ti
 This shows that the population has reached the carrying capacity (K) of $6 \times 10^{10}$, which is many times smaller than the population size estimated when assuming exponential growth. This is because the logistic model includes a maximum carrying capacity, for example due to biologically limiting factors like a limited respiratory resource.
 
 ## Question 3
-The r code is [exponential_vs_logistic.R](https://github.com/adamg421/MT_Wk3_logistic_growth/blob/main/exponential_vs_logistic.R)
+The r code used is [exponential_vs_logistic.R](https://github.com/adamg421/MT_Wk3_logistic_growth/blob/main/exponential_vs_logistic.R)
 
 This is a semi-log figure with Time (t) on the x-axis and the log of the population size (N) on the y-axis which compares the exponential growth function in blue to the logisitic growth function in red. 
 
